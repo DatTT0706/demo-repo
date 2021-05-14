@@ -11,6 +11,7 @@ html {
 }
 
 body {
+  font-family: 'Montserrat', sans-serif;
   -webkit-animation: opening 1s ease-in-out;
           animation: opening 1s ease-in-out;
 }
@@ -63,12 +64,12 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-height: 10vh;
   width: 60%;
   -ms-flex-wrap: wrap;
@@ -140,8 +141,8 @@ nav ul {
 .intro h2 {
   font-size: 8rem;
   padding-top: 2rem;
-  background: -webkit-gradient(linear, left top, right top, from(#38d39f), to(#38a4d3));
-  background: linear-gradient(left, #38d39f, #38a4d3);
+  background: -webkit-gradient(linear, right top, left top, from(#38d39f), to(#38a4d3));
+  background: linear-gradient(right, #38d39f, #38a4d3);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -327,6 +328,31 @@ nav ul {
         -ms-flex: 1 1 60rem;
             flex: 1 1 60rem;
     margin: 2rem 0rem;
+  }
+  .intro-text {
+    margin-top: 5rem;
+    text-align: center;
+  }
+  .intro-images {
+    text-align: center;
+  }
+  .intro-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .intro-social a {
+    margin: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

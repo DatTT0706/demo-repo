@@ -4,7 +4,7 @@
 }
 
 nav {
-    @include flex(row, center, space-between);
+    @include flex(row, space-between, center);
     min-height: 10vh;
     width: 60%;
     flex-wrap: wrap;
